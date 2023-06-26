@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zn-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d3effb;
+      }
+      .dialogue {
+        width: 500px;
+        padding: 20px;
+        box-shadow: 0 0 10px #3e92cc;
+        background-color: #f4f6f7;
+      }
+      .user {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .local {
+        justify-content: flex-end;
+      }
+      .user .avatar {
+        width: 60px;
+        text-align: center;
+      }
+      .user .avatar img {
+        width: 100%;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      .user .avatar p {
+        display: block;
+        margin-top: 5px;
+      }
+      .user .txt {
+        margin-bottom: auto;
+        padding: 16px;
+        border-radius: 10px;
+        position: relative;
+      }
+      .remote .txt {
+        margin-left: 20px;
+        color: #a1b4c5;
+        background-color: #fff;
+      }
+      .local .txt {
+        margin-right: 20px;
+        order: -1;
+        background-color: #3e92cc;
+        color: #fff;
+      }
+      .remote .txt::before,
+      .local .txt::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      .remote .txt::before {
+        border-right: 10px solid #fff;
+        left: -10px;
+      }
+      .local .txt::before {
+        border-left: 10px solid #3e92cc;
+        right: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dialogue">
+      <div class="user remote">
+        <div class="avatar">
+          <img src="https://picsum.photos/100/100?random=12" />
+          <p>Apple</p>
+        </div>
+        <div class="txt">老公你好帥!</div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <img src="https://picsum.photos/100/100?random=16" />
+          <p>Eric</p>
+        </div>
+        <div class="txt">那是為了配合超正的妳啊!</div>
+      </div>
+      <div class="user remote">
+        <div class="avatar">
+          <img src="https://picsum.photos/100/100?random=12" />
+          <p>Apple</p>
+        </div>
+        <div class="txt">老公你這麼會講話!是不是又偷買了甚麼玩具?</div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <img src="https://picsum.photos/100/100?random=16" />
+          <p>Eric</p>
+        </div>
+        <div class="txt">怎麼可能，我從來都不說謊的，你想太多了</div>
+      </div>
+      <div class="user remote">
+        <div class="avatar">
+          <img src="https://picsum.photos/100/100?random=12" />
+          <p>Apple</p>
+        </div>
+        <div class="txt">玩具拿出來...(直視)</div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <img src="https://picsum.photos/100/100?random=16" />
+          <p>Eric</p>
+        </div>
+        <div class="txt">...是......(遞)</div>
+      </div>
+    </div>
+    <p style="position: absolute; bottom: 40px">
+      本文是配合<a
+        href="https://ithelp.ithome.com.tw/users/20112550/ironman/2623"
+        >此教學文章</a
+      >使用的範例，但內容文字所提的都是真實的呦。
+    </p>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zn-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      html,
+      body {
+        background-color: #fa0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login {
+        width: 600px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 10px solid #fff;
+        box-shadow: 0 0 60px #000;
+      }
+      .form {
+        width: 400px;
+        height: 400px;
+        color: #fff;
+        margin: auto;
+      }
+      .form h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #fff;
+
+      }
+      .form .group {
+        margin-bottom: 20px;
+      }
+      .form label{
+        font-size: 20px;
+      }
+      .form .group input {
+        width: 100%;
+        border: 1px solid #000;
+        line-height: 3;
+        border-radius: 5px;
+      }
+      .form .btn-group {
+        font-size: 0;
+        margin-top: 50px;
+      }
+      .form .btn-group .btn{
+        font-size: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #6ab4fe;
+        width: 190px;
+        padding: 10px 0;
+        color: #fff;
+      }
+      .form .btn-group .btn +.btn {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <form class="form">
+        <h2>會員登入</h2>
+        <div class="group">
+          <label for="user_id">帳號</label>
+          <input type="text" name="" id="user_id" />
+        </div>
+        <div class="group">
+          <label for="user_password">密碼</label>
+          <input type="password" name="" id="user_password" />
+        </div>
+        <div class="btn-group">
+          <button class="btn">登入</button>
+          <button class="btn">取消</button>
+        </div>
+      </form>
+    </div>
+
+    <p
+      style="
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        padding: 10px;
+        left: 0;
+        right: 0;
+        color: #fff;
+        background: #000;
+        text-align: center;
+        font-size: 30px;
+      "
+    >
+      本文是配合<a
+        href="https://ithelp.ithome.com.tw/users/20112550/ironman/2623"
+        style="color: #fa0"
+        >此教學文章</a
+      >使用的範例，但內容文字所提的都是真實的呦。
+    </p>
+  </body>
+</html>
